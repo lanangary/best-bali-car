@@ -1,0 +1,43 @@
+@import '../node_modules/swiper/swiper-bundle.css';
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section .container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 80px;
+  overflow: hidden;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background: #46cd6b;
+  padding: 12px 18px;
+  gap: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.button img {
+  width: 35px;
+}
+.button.blue {
+  background-color: #38B6FF;
+}
+.button:hover {
+  background-color: black;
+}
+
+/*# sourceMappingURL=base.css.map */

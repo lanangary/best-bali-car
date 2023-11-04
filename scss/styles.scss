@@ -1,0 +1,170 @@
+@import 'base.scss';
+
+.header {
+    display: flex;
+    border-bottom: solid 1px black;
+    position: fixed;
+    background: white;
+    top: 0;
+    z-index: 99;
+
+    &-logo {
+        width: 100%;
+
+        &-image {
+            width: 200px;
+            height: 70px;
+            display: flex;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &-menus {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        align-items: center;
+
+        &.item {
+            .item {
+                &-menus {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    font-size: 22px;
+
+                    a {
+                        color: black;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &.section .container {
+        display: flex;
+        padding: 20px 80px;
+
+    }
+}
+
+
+.hero {
+    padding-top: 110px;
+
+    &-row {
+        display: flex;
+        gap: 40px;
+    }
+
+    &-col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        &:last-child {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            position: relative;
+            overflow: hidden;
+
+            border-top-left-radius: 30%;
+            border-top-right-radius: 30%;
+        }
+    }
+
+    &-title {
+        color: #38B6FF;
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+
+        span {
+            color: #ffc100;
+        }
+    }
+
+    &-description {
+        font-size: 18px;
+    }
+
+    &-button {
+        display: flex;
+        gap: 30px;
+    }
+
+    &-logos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-image {
+            display: flex;
+            gap: 20px;
+
+            img {
+                width: 55px;
+                height: auto;
+            }
+        }
+
+        &-text {
+            font-size: 18px;
+        }
+    }
+
+    &-image {
+        height: 520px;
+    }
+
+    &-asset {
+        position: absolute;
+        top: -20%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        left: -4%;
+        border-radius: 38%;
+        overflow: hidden;
+
+        .conferti {
+            width: 100%;
+            height: 100%;
+            scale: 1.2;
+        }
+
+        .love {
+            position: absolute;
+            width: 80px;
+
+            &-1 {
+                top: 30%;
+                left: 15%;
+                rotate: -15deg;
+            }
+
+            &-2 {
+                top: 38%;
+                left: 76%;
+                rotate: 20deg;
+            }
+        }
+    }
+}
+
+
+.cars {
+    .swiper {
+        width: 100%;
+        height: 700px;
+    }
+}

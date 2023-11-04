@@ -1,0 +1,177 @@
+@import '../node_modules/swiper/swiper-bundle.css';
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section .container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 80px;
+  overflow: hidden;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background: #46cd6b;
+  padding: 12px 18px;
+  gap: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.button img {
+  width: 35px;
+}
+.button.blue {
+  background-color: #38B6FF;
+}
+.button:hover {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  border-bottom: solid 1px black;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 99;
+}
+.header-logo {
+  width: 100%;
+}
+.header-logo-image {
+  width: 200px;
+  height: 70px;
+  display: flex;
+}
+.header-logo-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.header-menus {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+}
+.header-menus.item .item-menus {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 22px;
+}
+.header-menus.item .item-menus a {
+  color: black;
+}
+.header.section .container {
+  display: flex;
+  padding: 20px 80px;
+}
+
+.hero {
+  padding-top: 110px;
+}
+.hero-row {
+  display: flex;
+  gap: 40px;
+}
+.hero-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.hero-col:last-child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+.hero-title {
+  color: #38B6FF;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+.hero-title span {
+  color: #ffc100;
+}
+.hero-description {
+  font-size: 18px;
+}
+.hero-button {
+  display: flex;
+  gap: 30px;
+}
+.hero-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-logos-image {
+  display: flex;
+  gap: 20px;
+}
+.hero-logos-image img {
+  width: 55px;
+  height: auto;
+}
+.hero-logos-text {
+  font-size: 18px;
+}
+.hero-image {
+  height: 520px;
+}
+.hero-asset {
+  position: absolute;
+  top: -20%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: -4%;
+  border-radius: 38%;
+  overflow: hidden;
+}
+.hero-asset .conferti {
+  width: 100%;
+  height: 100%;
+  scale: 1.2;
+}
+.hero-asset .love {
+  position: absolute;
+  width: 80px;
+}
+.hero-asset .love-1 {
+  top: 30%;
+  left: 15%;
+  rotate: -15deg;
+}
+.hero-asset .love-2 {
+  top: 38%;
+  left: 76%;
+  rotate: 20deg;
+}
+
+.cars .swiper {
+  width: 100%;
+  height: 700px;
+}
+
+/*# sourceMappingURL=styles.css.map */

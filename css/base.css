@@ -28,6 +28,7 @@ a {
   color: white;
   font-weight: bold;
   font-size: 18px;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .button img {
@@ -38,6 +39,29 @@ a {
 }
 .button:hover {
   background-color: black;
+}
+
+/* Elements with the 'desktop' class will be hidden on screens with a maximum width of 1248px or smaller. */
+.desktop {
+  display: block;
+  /* Optional: Reset the default display property */
+}
+
+@media screen and (max-width: 1248px) {
+  .desktop {
+    display: none !important;
+  }
+}
+/* Elements with the 'mobile' class will be hidden on screens with a minimum width of 1248px or larger. */
+.mobile {
+  display: block;
+  /* Optional: Reset the default display property */
+}
+
+@media screen and (min-width: 1248px) {
+  .mobile {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=base.css.map */

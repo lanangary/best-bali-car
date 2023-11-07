@@ -1,23 +1,37 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    spaceBetween: 40,
-    slidesPerView: 4,
+const hamburger = document.querySelector('.header-logo-mobile-open');
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+hamburger.addEventListener('click', () => {
+    console.log('click');
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    hamburger.classList.toggle('open');
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+    var menuOpen = hamburger.querySelector('.mobile-open');
+    var menuClose = hamburger.querySelector('.mobile-close ');
+    var menuWrap = document.querySelector('.header-menus.mobile');
+
+    if (hamburger.classList.contains('open')) {
+        menuOpen.classList.remove('active');
+        menuClose.classList.remove('hidden');
+        menuWrap.classList.add('active');
+    } else {
+        menuOpen.classList.add('active');
+        menuClose.classList.add('hidden');
+        menuWrap.classList.remove('active');
+    }
 });
 
-console.log('test');
+
+const mobileWrapper = document.querySelector('.header-menus.mobile');
+const itemMenus = mobileWrapper.querySelector('.item-menus');
+
+itemMenus.addEventListener('click', () => {
+    var menuOpen = hamburger.querySelector('.mobile-open');
+    var menuClose = hamburger.querySelector('.mobile-close ');
+    var menuWrap = document.querySelector('.header-menus.mobile');
+
+    menuOpen.classList.add('active');
+    menuClose.classList.add('hidden');
+    menuWrap.classList.remove('active');
+});
+
+console.log(hamburger);

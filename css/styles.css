@@ -397,6 +397,8 @@ html {
 }
 .hero-image img {
   width: 100%;
+  height: auto;
+  min-height: 314px;
 }
 .hero-asset {
   position: absolute;
@@ -437,9 +439,14 @@ html {
     top: 25%;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 821px) {
+@media screen and (max-width: 1024px) and (max-width: 817px) {
   .hero-asset .love-1 {
-    top: 15%;
+    top: 33%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
+  .hero-asset .love-1 {
+    top: 5%;
   }
 }
 .hero-asset .love-2 {
@@ -452,9 +459,14 @@ html {
     top: 34%;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 821px) {
+@media screen and (max-width: 1024px) and (max-width: 817px) {
   .hero-asset .love-2 {
-    top: 22%;
+    top: 40%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
+  .hero-asset .love-2 {
+    top: 15%;
   }
 }
 

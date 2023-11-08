@@ -1,6 +1,6 @@
-@import '../node_modules/swiper/swiper-bundle.css';
 body {
   font-family: sans-serif;
+  margin: 0px;
 }
 
 a {
@@ -626,6 +626,7 @@ html {
 @media screen and (max-width: 426px) {
   .cars .disclaimer-wrap {
     font-size: 14px;
+    line-height: 130%;
   }
 }
 

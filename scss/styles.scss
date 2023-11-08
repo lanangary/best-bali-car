@@ -188,6 +188,17 @@
                         color: white;
                     }
                 }
+
+                &-button {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .button {
+                        font-size: 13px;
+                    }
+                }
             }
         }
     }
@@ -280,6 +291,13 @@
     &-button {
         display: flex;
         gap: 30px;
+
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
     &-logos {
@@ -404,9 +422,9 @@
     .card {
 
         width: 20%;
-        height: 600px;
+        height: 500px;
         border: solid 1px black;
-        padding: 15px;
+        padding: 25px 15px;
         border-radius: 20px;
 
         display: flex;
@@ -425,8 +443,8 @@
                 justify-content: flex-start;
 
                 @media screen and (max-width : 426px) {
-                    width: calc(40%);
-                    padding: 8px
+                    width: calc(80%);
+                    padding: 15px 10px;
                 }
             }
         }
@@ -436,10 +454,14 @@
             height: 170px;
 
             @media screen and (max-width : 426px) {
-                height: 100px;
+                height: auto;
             }
 
             img {
+                @media screen and (max-width : 768px) {
+                    object-fit: contain;
+                }
+
                 height: 100%;
                 object-fit: cover;
                 width: 100%;
@@ -454,7 +476,7 @@
                 font-size: 20px;
 
                 @media screen and (max-width : 426px) {
-                    font-size: 15px;
+                    font-size: 25px;
                 }
             }
 
@@ -466,7 +488,7 @@
             color: #38b6ff;
 
             @media screen and (max-width : 426px) {
-                font-size: 16px;
+                font-size: 23px;
             }
 
             &::after {
@@ -492,7 +514,7 @@
                 font-weight: bold;
 
                 @media screen and (max-width : 426px) {
-                    font-size: 11px;
+                    font-size: 16px;
                 }
             }
 
@@ -538,6 +560,13 @@
         }
 
         &-button {
+            margin-top: 8px;
+
+            @media screen and (max-width: 821px) {
+                margin-top: 12px;
+            }
+
+
             .button {
                 justify-content: center;
             }
@@ -746,6 +775,19 @@
                 }
 
                 img {
+
+                    &.bbri {
+                        width: 280px;
+
+                        @media screen and (max-width: 1025px) {
+                            @media screen and (max-width: 768px) {
+                                width: 160px;
+                            }
+
+                            width: 220px;
+                        }
+                    }
+
                     width: 200px;
                     height: 100px;
                     object-fit: cover;

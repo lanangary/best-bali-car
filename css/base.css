@@ -47,7 +47,7 @@ a {
 }
 @media screen and (max-width: 768px) and (max-width: 426px) {
   .button {
-    font-size: 12px;
+    font-size: 18px;
     border-radius: 15px;
   }
 }

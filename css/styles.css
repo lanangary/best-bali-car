@@ -47,7 +47,7 @@ a {
 }
 @media screen and (max-width: 768px) and (max-width: 426px) {
   .button {
-    font-size: 12px;
+    font-size: 18px;
     border-radius: 15px;
   }
 }
@@ -254,6 +254,15 @@ html {
 .header-menus.mobile .item-menus a {
   color: white;
 }
+.header-menus.mobile .item-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.header-menus.mobile .item-button .button {
+  font-size: 13px;
+}
 .header.section .container {
   display: flex;
   padding: 20px 80px;
@@ -338,6 +347,14 @@ html {
 .hero-button {
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .hero-button {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .hero-logos {
   display: flex;
@@ -454,9 +471,9 @@ html {
 }
 .cars .card {
   width: 20%;
-  height: 600px;
+  height: 500px;
   border: solid 1px black;
-  padding: 15px;
+  padding: 25px 15px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -479,8 +496,8 @@ html {
 }
 @media screen and (max-width: 1024px) and (max-width: 821px) and (max-width: 426px) {
   .cars .card {
-    width: 40%;
-    padding: 8px;
+    width: 80%;
+    padding: 15px 10px;
   }
 }
 .cars .card-image {
@@ -489,13 +506,18 @@ html {
 }
 @media screen and (max-width: 426px) {
   .cars .card-image {
-    height: 100px;
+    height: auto;
   }
 }
 .cars .card-image img {
   height: 100%;
   object-fit: cover;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .cars .card-image img {
+    object-fit: contain;
+  }
 }
 .cars .card-name {
   font-size: 25px;
@@ -508,7 +530,7 @@ html {
 }
 @media screen and (max-width: 821px) and (max-width: 426px) {
   .cars .card-name {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 .cars .card-price {
@@ -518,7 +540,7 @@ html {
 }
 @media screen and (max-width: 426px) {
   .cars .card-price {
-    font-size: 16px;
+    font-size: 23px;
   }
 }
 .cars .card-price::after {
@@ -545,7 +567,7 @@ html {
 }
 @media screen and (max-width: 821px) and (max-width: 426px) {
   .cars .card-point {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 .cars .card-point ul {
@@ -585,6 +607,14 @@ html {
   .cars .card-point ul li span {
     top: 0;
     height: 100%;
+  }
+}
+.cars .card-button {
+  margin-top: 8px;
+}
+@media screen and (max-width: 821px) {
+  .cars .card-button {
+    margin-top: 12px;
   }
 }
 .cars .card-button .button {
@@ -791,6 +821,19 @@ html {
   width: 200px;
   height: 100px;
   object-fit: cover;
+}
+.footer-col-image-button img.bbri {
+  width: 280px;
+}
+@media screen and (max-width: 1025px) {
+  .footer-col-image-button img.bbri {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 1025px) and (max-width: 768px) {
+  .footer-col-image-button img.bbri {
+    width: 160px;
+  }
 }
 @media screen and (max-width: 821px) {
   .footer-col-image-button img {

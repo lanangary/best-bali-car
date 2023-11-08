@@ -489,7 +489,7 @@ html {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
   overflow: hidden;
   justify-content: space-evenly;
 }
